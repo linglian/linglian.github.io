@@ -1,0 +1,658 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="#2016年暑假总结##学习方面
+
+首先，我刚放假的时候要学习Opengl，并开发一款3d游戏，现在游戏的基础框架已经快要完工了。
+其次，我打算学英语来着，可惜我没做到这个，一身心投身到游戏开发了，不过英语真的很重要，开学看看能不能行，哈哈
+接着，我在这个总结一下学习经验，避免很多人走弯路，对了，我学Opengl是在java环境运行的，在这里分享一下我的Opengl入门的教程JOGL教程
+
+
+##">
+<meta property="og:type" content="article">
+<meta property="og:title" content="凌恋的博客">
+<meta property="og:url" content="http://www.ssk91.com/2016/10/14/2016年暑假总结/index.html">
+<meta property="og:site_name" content="凌恋的博客">
+<meta property="og:description" content="#2016年暑假总结##学习方面
+
+首先，我刚放假的时候要学习Opengl，并开发一款3d游戏，现在游戏的基础框架已经快要完工了。
+其次，我打算学英语来着，可惜我没做到这个，一身心投身到游戏开发了，不过英语真的很重要，开学看看能不能行，哈哈
+接着，我在这个总结一下学习经验，避免很多人走弯路，对了，我学Opengl是在java环境运行的，在这里分享一下我的Opengl入门的教程JOGL教程
+
+
+##">
+<meta property="og:updated_time" content="2016-10-14T15:58:44.376Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="凌恋的博客">
+<meta name="twitter:description" content="#2016年暑假总结##学习方面
+
+首先，我刚放假的时候要学习Opengl，并开发一款3d游戏，现在游戏的基础框架已经快要完工了。
+其次，我打算学英语来着，可惜我没做到这个，一身心投身到游戏开发了，不过英语真的很重要，开学看看能不能行，哈哈
+接着，我在这个总结一下学习经验，避免很多人走弯路，对了，我学Opengl是在java环境运行的，在这里分享一下我的Opengl入门的教程JOGL教程
+
+
+##">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.ssk91.com/2016/10/14/2016年暑假总结/"/>
+
+
+  <title>  | 凌恋的博客 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?d84193e0cafe8060a97630d3386f902d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">凌恋的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">技术,IT,游戏开发</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-14T23:58:44+08:00" content="2016-10-14">
+              2016-10-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/14/2016年暑假总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/2016年暑假总结/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="2016年暑假总结"><a href="#2016年暑假总结" class="headerlink" title="#2016年暑假总结"></a>#2016年暑假总结</h2><p>##学习方面</p>
+<ol>
+<li>首先，我刚放假的时候要学习Opengl，并开发一款3d游戏，现在游戏的基础框架已经快要完工了。</li>
+<li>其次，我打算学英语来着，可惜我没做到这个，一身心投身到<strong>游戏开发</strong>了，不过英语真的很重要，开学看看能不能行，哈哈</li>
+<li>接着，我在这个总结一下学习经验，避免很多人走弯路，对了，我学Opengl是在java环境运行的，在这里分享一下我的Opengl入门的教程<a href="http://www.yiibai.com/jogl/jogl_installation.html" target="_blank" rel="external">JOGL教程</a></li>
+</ol>
+<hr>
+<p>###关于Opengl入门<br>其实这个说简单很简单，说难也难，首先要找对方法，按照上面的那个入门指南做，你是会做出来一些有趣的东西，就是那些实例，方块啊什么的，但是呢，你懂么，这篇教程仅仅是入门，不，我觉得连入门都达不到，但是我刚开始接触的时候，做上面的实例觉得很有意思，简单的几行代码，就能做出来实实在在的东西。<br>那么当我觉得这篇教程的<strong>基础</strong>之处之后，我开始上网搜索教程，网上的教程五花八门，各种各样的都有，当然，入门最著名的就是Nehe的教程了，你可以看他的教程，当然教程教程，就是用代码来告诉你，这样写，那样写，就能做出来，当然，我也不排斥看这个，我当时也看了前几章，可能是翻译的问题，他的教程没能让我继续看下来，接着，我去寻找书籍，在这里我推荐学东西就去找书，最好书有配套的视频就最棒了，如果没有视频，就找个类似的视频看，反正都是差不多的，不过书必须有，就算你不去看，但是必须有，电子书也好，纸质版的最好了。<br>当看到灯光和贴图的时候，差不多就可以开始动手实战了，我的目的不就是为了做游戏么，对吧?你可以说这么整不深入啊，很多东西都不懂，这么快就开始做了?不过按我说，没错，让我们开始做吧。我可以这么告诉你，你现在不做，你就算把书看完了，你到头来，还是点从这里开始做，到时候这里的东西你就都忘得差不多了，当然了，你要是过目不忘，哈哈，那你厉害，我的话记性就不咋地，如果不用就容易忘记了。反正我做了，我是先开始从贴图做的，首先我用立方体，自己随便找了个图，贴上去，哎呦妈呀，老简单了，咔咔就出图片，还会转，当时我这里的什么底层啥的也不是很清楚，就是写呗，反正都底层已经写好了，其实你也不用太较真，计算机都是别人封装好的，难道你还要学习怎么制造计算机，如果还没看通，就拿你现在用的鼠标或者触摸屏来说，你现在正在用它，对吧，难道你要知道怎么制造它，它的底层是什么，才去用它么。又偏离话题了，接着说，能贴出来图片以后，我打算做个最简单的贪吃蛇来试试看，不要问为什么是贪吃蛇，这么说吧，贪吃蛇这款游戏，在什么平台，不管什么语言都能做出来，当然了，什么游戏都一样，但是贪吃蛇这款所有人都知道的游戏，你<strong>必须</strong>会做，而且你只要接触到新东西，不用问，首先就要把贪吃蛇做出来，将来你会用的各种引擎，那时你就做款贪吃蛇，做完以后，这款引擎你就已经入门了。<br>接着回到贪吃蛇的话题，贪吃蛇里有一个小苹果，那么，我把小苹果放到地图上，显示出来，我发现就算用的是png这类有<strong>透明</strong>性质的图片，他会默认将透明部分转为白色，就像windows自带的画图工具，那么问题来了，我怎么样才能将小苹果显示出来呢，这时候，聪明的人就会去上网搜索了。<br>用混色，具体的自行百度，有很多介绍，反正基础思想就是2个点的颜色，咔咔经过一些运算，就出来一个新颜色，然后就让我们觉得好像半透明了。<br>小苹果解决了，其他的也就好办了，反正键盘监听什么的都用java自带的那个就好了，在这里就你会想，java好简单啊，啥都做好了，直接用就行，其实没这回事，就算是c语言，说好自己写的，其实就是自己或者别人写完的库拿来用，跟java一样，就是java封装好了，让人觉得好像世界都不用操心了，你要是这么觉得，那么你接着看下去。  </p>
+<p>###贪吃蛇完成直接之后<br>我就在想，我现在玩的游戏的人物都是非常形象生动的，我做的就是方块啊一些基础组件拼接，而且都是代码形式来写，那我是不是应该写一个可以编辑这些，并读取出来，这样我就不用改代码了啊，这个时候，机智的我，上网去搜索了，哈哈，找到了3ds max，原来这个软件就把我想的那些都做出来了啊，那我怎么导入呢，当然还是要网搜了，一找，有好多，点进去一看，都是一个模子刻出来的，就算//都没变，哈哈，那么我就随便找一个吧，这时候你就会发现，没有java的啊，全是c++的，这就很尴尬了，当时我这个内心纠结啊，都想转战c++，但是我还是坚持下来，我将代码看了一遍，接着，有模有样的开始转为java的，具体转为我也不仔细说了，反正这个也是个过程，当你自己独立做完以后，你就会信心十足了，毕竟才起步嘛。对了，如果实在写不出来，可以跟我要我写的代码，都封装好了，可以直接用，要的话进群：281525191，私聊我，我发给你，不过最好自己写<br>整完以后，我导入了好多好看的3ds模型，酷炫，但是不会动。这就很尴尬了，反正现在的我就将3ds作为建筑啊，地图啊这些静止的物体，游戏，就是要动，对不对，这里我直接说吧，对于新手，我推荐用md2格式的，这个格式相对而言容易实现，这个格式就像我们之前用的那些帧图，一帧一帧的播放，反正你可以这么理解，具体的怎么读取，可以上网搜一下，反正都是c语言的，你自己转换，对了，那么代码有些会有写漏洞啊，错误什么的，自己到时候修改就可以了，如果实在不行，就跟我要就可以了。  </p>
+<p>###接下来呢<br>这二个做完了以后，一款游戏基本就成型了，因为你想啊，Opengl只是图形库，那么我们做游戏，就是为了这些啊，图片，动画，模型对吧？对了，后来我接触到了粒子系统，就是炫酷的特效，哈哈，粒子系统有好有坏，最好自己写，在这里我说一下粒子的基本属性，防止你走弯路，粒子：有三维坐标以及相对应的速度和加速度，生存时间，生存消耗，还有rgb颜色，当然，也可以加上形状，不过怎么样都逃不过这些，具体的你再按需求加，反正必须自己写，不解释。  </p>
+<p>###最后</p>
+<h2 id="你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？"><a href="#你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？" class="headerlink" title="你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？  "></a>你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？  </h2><p>##结尾<br>在这里，我的暑假也要结束了，我半夜凌晨起来打这些，就是想总结一下自己的暑假都干了些什么，也许不多，但是我感觉这个暑假，是我目前为止过的最充实的，我还有几个暑假能过了呢。哎</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/14/OpenlGL游戏编程-简单的机器人制作（三）/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/14/大一生活总结/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/14/2016年暑假总结/"
+           data-title="" data-url="http://www.ssk91.com/2016/10/14/2016年暑假总结/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/头像.JPG"
+               alt="ling lian" />
+          <p class="site-author-name" itemprop="name">ling lian</p>
+          <p class="site-description motion-element" itemprop="description">游戏开发教程和技术</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2016年暑假总结"><span class="nav-number">1.</span> <span class="nav-text">#2016年暑假总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？"><span class="nav-number">2.</span> <span class="nav-text">你就要开始学习PS，3dsMax的使用方法了，不用太深入，按需来就行，我的话，反正是在制作的过程中自己学完了，不精，但是够用就可以了，毕竟我们不是专业的美工，我的画画水平也超烂啊啊啊啊，哈哈，没事，咱可以慢慢来，我们还很年轻不是么？  </span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ling lian</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"linglian"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
