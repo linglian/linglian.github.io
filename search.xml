@@ -36,15 +36,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[大一生活总结]]></title>
-      <url>http://www.ssk91.com/2016/10/15/%E5%A4%A7%E4%B8%80%E7%94%9F%E6%B4%BB%E6%80%BB%E7%BB%93/</url>
-      <content type="html"><![CDATA[<h2 id="大一生活总结"><a href="#大一生活总结" class="headerlink" title="#大一生活总结"></a>#大一生活总结</h2><p>##前言<br>还记得刚入大学的时候，怀着对未来的憧憬，就满怀自信地开始了自己的大一生活。在来大学之前，我对大学的了解都来自于电视上，到了这里，经过一年的生活，也明白了电视毕竟是电视在这里，没有学什么会什么的，长得又帅的高富帅和白富美，也没那些曲折离奇的故事，这里只有靠奋斗才能向上的<strong>平淡</strong>生活，但这里不<em>无趣</em>，不<em>枯燥</em>，你在这里总能实现你以前没有接触却想接触的事物。</p>
-<p>##主文<br>在民大，这里有热心的老师、学长、还有同学。这里的学风、校纪带着我能自觉地去学习，在这里，我总结以下自己对大一生活和学习的感悟，以此来回顾过去，也为了有需要的人提供自己的微薄之力。<br>首先，刚进入大学，我被很多东西所吸引，最直接的就是自由的课余时间能干的事情了：我可以跟朋友一起去海边玩，可以去看电影，也可以海吃海喝，玩电脑。刚开始的一个多月，我都沉浸于其中，后来，当我渐渐适应，从高中走出来后，我回头看到的是一个什么都都没有干的一个月，我感觉我这一个月没什么可以拿出来回顾的东西，当然除了长了几斤肉……我开始学习，去读一些书，教一些朋友比较好，在闲暇时读一本书，在平常，将自己的感悟分享给那些对此也感兴趣的朋友，你很快就会找到自己在大学的志同道合的朋友了额。<br>就这样，不如大一下学期，课程变得繁重，虽然我上课也是吊儿郎当，幸好我没有挂科，记得大一下学期的时候，我本打算好好听课，但是还是没坚持下来，我觉得还是对自己感兴趣的东西，围着这展开一系列的目标比较好，不要为中间一点点挫折而放弃，像我每当遇到坎时，总是想象我是否真的需要这个，是否热爱这个，大一下学期也就这么过去了，说的很快，其实其中经历也不能说的太明白，反正一句好，只要你肯学，那就没错，你若不学，现在开始也不迟。<br>现在到了大二，课程也开始多了，好在课程安排合理，从下午三点开始，我们就有充足的自由时间，我的目标：尽量不要沉迷于玩游戏，每天下午下课可以自觉的去学习、打代码，做到这些，就觉得没有荒废，至少现在的我如是想。<br>对于计算机的职业发展，计算机随着科技进步，人们生活水平提高，职业选择越来越多，就拿我想从事的游戏行业来说，涉及方面很多，但大多数职业的所需知识无非也就那几点：对于基层代码开发，合理的代码涉及，团队合作，懂得图形，基本的游戏算法，通宵一些基本的软件技巧：PS，3ds-max等等，一般游戏开发是个大工程，分为引擎开发，视音频制作以及运营宣传等三大块，具体的又分为很多小分支。总之，一个游戏越庞大，分支就越多越细，简单的游戏，一个人就可胜任，这里称之为独立开发者，其游戏也称为独立游戏。  </p>
-<p>##结尾<br>这就是我对我的大一生活的总结，以及对大二的规划及对自己未来所要从事的职业的了解和展望</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[OpenlGL游戏编程-简单的机器人制作（三）]]></title>
       <url>http://www.ssk91.com/2016/10/15/OpenlGL%E6%B8%B8%E6%88%8F%E7%BC%96%E7%A8%8B-%E7%AE%80%E5%8D%95%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%B6%E4%BD%9C%EF%BC%88%E4%B8%89%EF%BC%89/</url>
       <content type="html"><![CDATA[<h2 id="OpenlGL游戏编程-简单的机器人制作（三）"><a href="#OpenlGL游戏编程-简单的机器人制作（三）" class="headerlink" title="#OpenlGL游戏编程-简单的机器人制作（三）"></a>#OpenlGL游戏编程-简单的机器人制作（三）</h2><p><em>！注意本教程是基于java的，我会在这里从创建java项目一步一步的写。（java版本为java8）</em></p>
@@ -67,6 +58,35 @@
 <p>其他类不变</p>
 <hr>
 <p>##收场<br>执行成功后效果如下:<br><img src="http://img.blog.csdn.net/20160802025615838" alt="执行成功"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[大一生活总结]]></title>
+      <url>http://www.ssk91.com/2016/10/15/%E5%A4%A7%E4%B8%80%E7%94%9F%E6%B4%BB%E6%80%BB%E7%BB%93/</url>
+      <content type="html"><![CDATA[<h2 id="大一生活总结"><a href="#大一生活总结" class="headerlink" title="#大一生活总结"></a>#大一生活总结</h2><p>##前言<br>还记得刚入大学的时候，怀着对未来的憧憬，就满怀自信地开始了自己的大一生活。在来大学之前，我对大学的了解都来自于电视上，到了这里，经过一年的生活，也明白了电视毕竟是电视在这里，没有学什么会什么的，长得又帅的高富帅和白富美，也没那些曲折离奇的故事，这里只有靠奋斗才能向上的<strong>平淡</strong>生活，但这里不<em>无趣</em>，不<em>枯燥</em>，你在这里总能实现你以前没有接触却想接触的事物。</p>
+<p>##主文<br>在民大，这里有热心的老师、学长、还有同学。这里的学风、校纪带着我能自觉地去学习，在这里，我总结以下自己对大一生活和学习的感悟，以此来回顾过去，也为了有需要的人提供自己的微薄之力。<br>首先，刚进入大学，我被很多东西所吸引，最直接的就是自由的课余时间能干的事情了：我可以跟朋友一起去海边玩，可以去看电影，也可以海吃海喝，玩电脑。刚开始的一个多月，我都沉浸于其中，后来，当我渐渐适应，从高中走出来后，我回头看到的是一个什么都都没有干的一个月，我感觉我这一个月没什么可以拿出来回顾的东西，当然除了长了几斤肉……我开始学习，去读一些书，教一些朋友比较好，在闲暇时读一本书，在平常，将自己的感悟分享给那些对此也感兴趣的朋友，你很快就会找到自己在大学的志同道合的朋友了额。<br>就这样，不如大一下学期，课程变得繁重，虽然我上课也是吊儿郎当，幸好我没有挂科，记得大一下学期的时候，我本打算好好听课，但是还是没坚持下来，我觉得还是对自己感兴趣的东西，围着这展开一系列的目标比较好，不要为中间一点点挫折而放弃，像我每当遇到坎时，总是想象我是否真的需要这个，是否热爱这个，大一下学期也就这么过去了，说的很快，其实其中经历也不能说的太明白，反正一句好，只要你肯学，那就没错，你若不学，现在开始也不迟。<br>现在到了大二，课程也开始多了，好在课程安排合理，从下午三点开始，我们就有充足的自由时间，我的目标：尽量不要沉迷于玩游戏，每天下午下课可以自觉的去学习、打代码，做到这些，就觉得没有荒废，至少现在的我如是想。<br>对于计算机的职业发展，计算机随着科技进步，人们生活水平提高，职业选择越来越多，就拿我想从事的游戏行业来说，涉及方面很多，但大多数职业的所需知识无非也就那几点：对于基层代码开发，合理的代码涉及，团队合作，懂得图形，基本的游戏算法，通宵一些基本的软件技巧：PS，3ds-max等等，一般游戏开发是个大工程，分为引擎开发，视音频制作以及运营宣传等三大块，具体的又分为很多小分支。总之，一个游戏越庞大，分支就越多越细，简单的游戏，一个人就可胜任，这里称之为独立开发者，其游戏也称为独立游戏。  </p>
+<p>##结尾<br>这就是我对我的大一生活的总结，以及对大二的规划及对自己未来所要从事的职业的了解和展望</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[学习网站&教程汇总]]></title>
+      <url>http://www.ssk91.com/2016/10/15/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99&%E6%95%99%E7%A8%8B%E6%B1%87%E6%80%BB/</url>
+      <content type="html"><![CDATA[<p>#学习网站&amp;教程汇总<br><em>我们的群号是：538093446！</em></p>
+<h2 id="开场"><a href="#开场" class="headerlink" title="##开场"></a>##开场</h2><p>未经允许禁止转载，商用</p>
+<h2 id="更新时间-2016-8-2-6-39"><a href="#更新时间-2016-8-2-6-39" class="headerlink" title="##更新时间:2016-8-2 6:39"></a>##更新时间:2016-8-2 6:39</h2><h2 id="系统工具下载网站"><a href="#系统工具下载网站" class="headerlink" title="###系统工具下载网站"></a>###系统工具下载网站</h2><p><a href="http://www.dayanzai.me/" target="_blank" rel="external">系统工具下载网站</a></p>
+<p>###MarkDown语法说明<br><a href="http://www.tuicool.com/articles/fmeMbqR" target="_blank" rel="external">Markdown,你只需要掌握这几个</a><br><a href="http://oiltang.com/2014/05/04/markdown-and-mathjax/" target="_blank" rel="external">Markdown输入数学公式</a><br><a href="http://wowubuntu.com/markdown/index.html#blockquote" target="_blank" rel="external">Markdown 语法说明</a><br><a href="https://www.zybuluo.com/codeep/note/163962" target="_blank" rel="external">Cmd Markdown 公式指导手册</a></p>
+<hr>
+<p><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">MarkDown语法说明</a></p>
+<h2 id="人人素材网使用教程"><a href="#人人素材网使用教程" class="headerlink" title="###人人素材网使用教程"></a>###人人素材网使用教程</h2><p>观看此教程请一次读完首先<br>你需要一个E站的账号:<br><a href="http://www.ezhanzy.com/forum.php" target="_blank" rel="external">E站官网</a><br>账号从这里买：<a href="https://shop58008236.taobao.com/" target="_blank" rel="external">淘宝店铺(一元十个)</a><br>我在这分享一个账号<br>推荐买一块钱10次的<br>账号:hxvewna密码:qava6av<br>接着去人人素材网:<br>首页:<a href="http://www.rr-sc.com/portal.php" target="_blank" rel="external">人人素材网</a><br>搜索页面:<a href="http://www.rr-sc.com/search.php?mod=forum" target="_blank" rel="external">点击搜索</a><br>E站具体使用教程，去淘宝店铺看，写的很清楚  </p>
+<h2 id="游戏纹理贴图"><a href="#游戏纹理贴图" class="headerlink" title="###游戏纹理贴图"></a>###游戏纹理贴图</h2><p><a href="http://www.rr-sc.com/forum.php?mod=viewthread&amp;tid=16592915" target="_blank" rel="external">人人素材网-游戏纹理贴图</a><br>解压密码:www.rr-sc.com-AA9E91976E72839F64FCB82257330663</p>
+<h2 id="JOGL下载地址"><a href="#JOGL下载地址" class="headerlink" title="###JOGL下载地址"></a>###JOGL下载地址</h2><p><a href="http://jogamp.org/deployment/jogamp-current/archive/" target="_blank" rel="external">JOGL</a></p>
+<h2 id="大量二维素材和音效"><a href="#大量二维素材和音效" class="headerlink" title="###大量二维素材和音效"></a>###大量二维素材和音效</h2><p><a href="http://pan.baidu.com/s/1jIO2qua" target="_blank" rel="external">百度网盘下载</a><br>密码:l2wq</p>
+<h2 id="算法学习网站-可视化过程"><a href="#算法学习网站-可视化过程" class="headerlink" title="###算法学习网站-可视化过程"></a>###算法学习网站-可视化过程</h2><p><a href="http://visualgo.net/" target="_blank" rel="external">visualgo官网</a></p>
+<h2 id="vc和vb各个版本下载"><a href="#vc和vb各个版本下载" class="headerlink" title="###vc和vb各个版本下载"></a>###vc和vb各个版本下载</h2><p><a href="http://pan.baidu.com/s/1dEr5Ygx" target="_blank" rel="external">vc和vb各个版本下载</a></p>
+<h2 id="ico图标在线转换"><a href="#ico图标在线转换" class="headerlink" title="###ico图标在线转换"></a>###ico图标在线转换</h2><p><a href="http://www.ico.la/#downico" target="_blank" rel="external">ico图标在线转换</a></p>
+<p>##收尾<br>本人为大二学生,本文档仅供学习之用</p>
 ]]></content>
     </entry>
     
@@ -111,26 +131,6 @@
 <p>##送给想要开发游戏的人<br>从这里开始我就开始介绍我是如何学习，如何开发游戏的了，如果不是很想开发游戏，请忽略此段。<br>对于我们很多人来说，都玩过游戏，手机，电脑，哪怕是儿时的捉迷藏，都是游戏，那么你，是否想开发一款游戏呢？其实开发游戏，需要许多方面的不同的知识，游戏可以脱离现实，也可以模拟现实，内容怎么做都可以，游戏需要结合音频，视频，操作，运算等等方面的设计，对我们来说，游戏的音频，视频刚开始不用太过于着急，反正我做的游戏都不带音效的，我们需要做的就是运用现在所学的东西去开发游戏，什么游戏都好，贪吃蛇？当你做完贪吃蛇你就不满足于贪吃蛇了，那就做更厉害的，更复杂的，在这里我也不推荐什么书，也不推荐什么视频教程，我只推荐一件事情，什么事情都要亲力亲为，不要去靠别人，看书，自己上图书馆找，视频？自己上网下载，无论书的好坏，视频的好坏，其实都无所谓，你要学习的就是这些东西，判断你所看的内容的好坏，并在其中挑出好的，值得学习的，培养这种能力，推荐那些著名的好书给你们看，难道看完就能成大神？在你自己找（看）书，视频的过程中，你自然会遇到这些好的书和视频，到时候再看，体会会更多，更深刻，记住，书不能停，视频可以停，因为我感觉看视频百分之八十的时间就是再听废话，浪费时间，还不如看书，起码他可以无限次便捷的返回快进，反正能看书就看书，想偷懒就看视频，当然可以视频结合书看，不过我还是推荐自己看书，自己动手，你看的视频百分之八十肯定是中文的，而书，是外国的，所以呢？自己斟酌吧。  </p>
 <p>##最后<br>民大的图书馆，书很多，但更新慢，时常能借到零几年的书，没关系，看吧，当你的书跟不上你的工具的时候，这个也是提升你学习能力的方法，不然以后你学习什么的东西都需要那本书或者视频的工具，并且版本号都必须对上的时候，你觉得好么？<br>民大的机房无限网，但是限速200kb，可以去看看网站啊，视频啊什么的，每个月20g还是不够用的，对计算机的人来说。<br>还有，少打游戏，游戏可以玩，但是学习不要停。  </p>
 <p>##最后的最后<br>并不是每个人都像你那么爱学习</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[学习网站&教程汇总]]></title>
-      <url>http://www.ssk91.com/2016/10/15/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99&%E6%95%99%E7%A8%8B%E6%B1%87%E6%80%BB/</url>
-      <content type="html"><![CDATA[<p>#学习网站&amp;教程汇总<br><em>我们的群号是：538093446！</em></p>
-<h2 id="开场"><a href="#开场" class="headerlink" title="##开场"></a>##开场</h2><p>未经允许禁止转载，商用</p>
-<h2 id="更新时间-2016-8-2-6-39"><a href="#更新时间-2016-8-2-6-39" class="headerlink" title="##更新时间:2016-8-2 6:39"></a>##更新时间:2016-8-2 6:39</h2><h2 id="系统工具下载网站"><a href="#系统工具下载网站" class="headerlink" title="###系统工具下载网站"></a>###系统工具下载网站</h2><p><a href="http://www.dayanzai.me/" target="_blank" rel="external">系统工具下载网站</a></p>
-<p>###MarkDown语法说明<br><a href="http://www.tuicool.com/articles/fmeMbqR" target="_blank" rel="external">Markdown,你只需要掌握这几个</a><br><a href="http://oiltang.com/2014/05/04/markdown-and-mathjax/" target="_blank" rel="external">Markdown输入数学公式</a><br><a href="http://wowubuntu.com/markdown/index.html#blockquote" target="_blank" rel="external">Markdown 语法说明</a><br><a href="https://www.zybuluo.com/codeep/note/163962" target="_blank" rel="external">Cmd Markdown 公式指导手册</a></p>
-<hr>
-<p><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">MarkDown语法说明</a></p>
-<h2 id="人人素材网使用教程"><a href="#人人素材网使用教程" class="headerlink" title="###人人素材网使用教程"></a>###人人素材网使用教程</h2><p>观看此教程请一次读完首先<br>你需要一个E站的账号:<br><a href="http://www.ezhanzy.com/forum.php" target="_blank" rel="external">E站官网</a><br>账号从这里买：<a href="https://shop58008236.taobao.com/" target="_blank" rel="external">淘宝店铺(一元十个)</a><br>我在这分享一个账号<br>推荐买一块钱10次的<br>账号:hxvewna密码:qava6av<br>接着去人人素材网:<br>首页:<a href="http://www.rr-sc.com/portal.php" target="_blank" rel="external">人人素材网</a><br>搜索页面:<a href="http://www.rr-sc.com/search.php?mod=forum" target="_blank" rel="external">点击搜索</a><br>E站具体使用教程，去淘宝店铺看，写的很清楚  </p>
-<h2 id="游戏纹理贴图"><a href="#游戏纹理贴图" class="headerlink" title="###游戏纹理贴图"></a>###游戏纹理贴图</h2><p><a href="http://www.rr-sc.com/forum.php?mod=viewthread&amp;tid=16592915" target="_blank" rel="external">人人素材网-游戏纹理贴图</a><br>解压密码:www.rr-sc.com-AA9E91976E72839F64FCB82257330663</p>
-<h2 id="JOGL下载地址"><a href="#JOGL下载地址" class="headerlink" title="###JOGL下载地址"></a>###JOGL下载地址</h2><p><a href="http://jogamp.org/deployment/jogamp-current/archive/" target="_blank" rel="external">JOGL</a></p>
-<h2 id="大量二维素材和音效"><a href="#大量二维素材和音效" class="headerlink" title="###大量二维素材和音效"></a>###大量二维素材和音效</h2><p><a href="http://pan.baidu.com/s/1jIO2qua" target="_blank" rel="external">百度网盘下载</a><br>密码:l2wq</p>
-<h2 id="算法学习网站-可视化过程"><a href="#算法学习网站-可视化过程" class="headerlink" title="###算法学习网站-可视化过程"></a>###算法学习网站-可视化过程</h2><p><a href="http://visualgo.net/" target="_blank" rel="external">visualgo官网</a></p>
-<h2 id="vc和vb各个版本下载"><a href="#vc和vb各个版本下载" class="headerlink" title="###vc和vb各个版本下载"></a>###vc和vb各个版本下载</h2><p><a href="http://pan.baidu.com/s/1dEr5Ygx" target="_blank" rel="external">vc和vb各个版本下载</a></p>
-<h2 id="ico图标在线转换"><a href="#ico图标在线转换" class="headerlink" title="###ico图标在线转换"></a>###ico图标在线转换</h2><p><a href="http://www.ico.la/#downico" target="_blank" rel="external">ico图标在线转换</a></p>
-<p>##收尾<br>本人为大二学生,本文档仅供学习之用</p>
 ]]></content>
     </entry>
     
