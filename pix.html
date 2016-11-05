@@ -84,40 +84,43 @@
 
 
 
-<meta name="description" content="This is a Title
+<meta name="description" content="像素画
         
         
     
     
         
         
+            var i = 0;
             var PSD = require(&quot;psd&quot;);
-            PSD.fromURL(&quot;\PS像素画学习\\像素画学习_02.psd&quot;).then(function (psd) {">
+                PSD.fromURL(&quot;\PS像素画学习\\像素画学习_0&quot;+(i+1)+&quot;.psd&quot;).then(functi">
 <meta property="og:type" content="website">
 <meta property="og:title" content="凌恋的博客">
 <meta property="og:url" content="http://www.ssk91.com/pix.html">
 <meta property="og:site_name" content="凌恋的博客">
-<meta property="og:description" content="This is a Title
+<meta property="og:description" content="像素画
         
         
     
     
         
         
+            var i = 0;
             var PSD = require(&quot;psd&quot;);
-            PSD.fromURL(&quot;\PS像素画学习\\像素画学习_02.psd&quot;).then(function (psd) {">
-<meta property="og:updated_time" content="2016-11-05T15:32:56.095Z">
+                PSD.fromURL(&quot;\PS像素画学习\\像素画学习_0&quot;+(i+1)+&quot;.psd&quot;).then(functi">
+<meta property="og:updated_time" content="2016-11-05T15:41:08.004Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凌恋的博客">
-<meta name="twitter:description" content="This is a Title
+<meta name="twitter:description" content="像素画
         
         
     
     
         
         
+            var i = 0;
             var PSD = require(&quot;psd&quot;);
-            PSD.fromURL(&quot;\PS像素画学习\\像素画学习_02.psd&quot;).then(function (psd) {">
+                PSD.fromURL(&quot;\PS像素画学习\\像素画学习_0&quot;+(i+1)+&quot;.psd&quot;).then(functi">
 
 
 
@@ -280,19 +283,25 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>This is a Title</title>
+        <title>像素画</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <script src="http://cdn.bootcss.com/psd.js/3.1.0/psd.js"></script>
         <script language="JavaScript">
+            var i = 0;
             var PSD = require("psd");
-            PSD.fromURL("\PS像素画学习\\像素画学习_02.psd").then(function (psd) {
-                document.getElementById('image').appendChild(psd.image.toPng());
-            });
+                PSD.fromURL("\PS像素画学习\\像素画学习_0"+(i+1)+".psd").then(function (psd) {
+                    document.getElementById('image').appendChild(psd.image.toPng());
+                });
+                while(PSD.image!=null){
+                    i++;
+                    PSD.fromURL("\PS像素画学习\\像素画学习_0"+(i+1)+".psd").then(function (psd) {
+                        document.getElementById('image').appendChild(psd.image.toPng());
+                    });
+                }
         </script>
-        <div>像素画</div>
         <div id="image"></div>
     </body>
 </html>
