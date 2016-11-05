@@ -108,7 +108,7 @@
             var i = 0;
             var PSD = require(&quot;psd&quot;);
                 PSD.fromURL(&quot;\PS像素画学习\\像素画学习_0&quot;+(i+1)+&quot;.psd&quot;).then(functi">
-<meta property="og:updated_time" content="2016-11-05T15:41:08.004Z">
+<meta property="og:updated_time" content="2016-11-05T15:43:03.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凌恋的博客">
 <meta name="twitter:description" content="像素画
@@ -295,7 +295,7 @@ and open the template in the editor.
                 PSD.fromURL("\PS像素画学习\\像素画学习_0"+(i+1)+".psd").then(function (psd) {
                     document.getElementById('image').appendChild(psd.image.toPng());
                 });
-                while(PSD.image!=null){
+                while(PSD.image.toPng()!=null){
                     i++;
                     PSD.fromURL("\PS像素画学习\\像素画学习_0"+(i+1)+".psd").then(function (psd) {
                         document.getElementById('image').appendChild(psd.image.toPng());
