@@ -93,6 +93,7 @@
         
             var PSD = require(&quot;psd&quot;);
 			var n = 2;
+			var j = 0;
             for(var i=0;i">
 <meta property="og:type" content="website">
 <meta property="og:title" content="凌恋的博客">
@@ -107,8 +108,9 @@
         
             var PSD = require(&quot;psd&quot;);
 			var n = 2;
+			var j = 0;
             for(var i=0;i">
-<meta property="og:updated_time" content="2016-11-06T03:29:37.076Z">
+<meta property="og:updated_time" content="2016-11-06T04:04:14.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凌恋的博客">
 <meta name="twitter:description" content="像素画
@@ -120,6 +122,7 @@
         
             var PSD = require(&quot;psd&quot;);
 			var n = 2;
+			var j = 0;
             for(var i=0;i">
 
 
@@ -292,9 +295,14 @@ and open the template in the editor.
         <script language="JavaScript">
             var PSD = require("psd");
 			var n = 2;
+			var j = 0;
             for(var i=0;i<n;i++){
                 PSD.fromURL("\PS像素画学习\\像素画学习_0"+(i+1)+".psd").then(function (psd) {
-                    document.getElementById('image').appendChild(psd.image.toPng());
+				j++;
+				var node=document.createElement("node"+j);
+				node.innerHTML = "<p align='center'><strong>第"+j+"张</strong></p>";
+				node.appendChild(psd.image.toPng());
+				document.getElementById("image").appendChild(node);
                 });
             }
         </script>
