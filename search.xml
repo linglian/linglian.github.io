@@ -4,31 +4,56 @@
   
     
     <entry>
-      <title><![CDATA[概率论-学习（一）]]></title>
-      <url>http://www.ssk91.com/2016/11/10/2016-11-10/</url>
-      <content type="html"><![CDATA[<h1 id="概率论-随机事件和概率"><a href="#概率论-随机事件和概率" class="headerlink" title="概率论-随机事件和概率"></a>概率论-随机事件和概率</h1><hr>
+      <title><![CDATA[概率论学习]]></title>
+      <url>http://www.ssk91.com/2016/11/10/%E6%A6%82%E7%8E%87%E8%AE%BA%E5%AD%A6%E4%B9%A0/</url>
+      <content type="html"><![CDATA[<hr>
+<p>title: 概率论学习<br>date: 2016-11-10 19:16<br>categories: 概率</p>
+<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><h1 id="概率论-随机事件和概率"><a href="#概率论-随机事件和概率" class="headerlink" title="概率论-随机事件和概率"></a>概率论-随机事件和概率</h1><hr>
 <p><strong>1. 随机事件的相关概念</strong></p>
-<ol>
-<li>概率论中的随机试验满足三个条件：<ol>
+<ul>
+<li>概率论中的随机试验满足三个条件：<ul>
 <li>可在相同条件下重复进行</li>
 <li>每次试验的结果不止一个</li>
 <li>试验前不能确定哪一个结果会出现</li>
-</ol>
+</ul>
 </li>
 <li>样本空间：随机试验的所有可能结果所组成的集合，每个集合中每一个元素成为样本点</li>
 <li>随机试验：样本空间的子集</li>
 <li>基本事件：一个样本点组成的单点集成为基本事件</li>
 <li>必然事件$\Omega$:每一次实验中一定发生的事件</li>
 <li>不可能事件 $\emptyset$:每一次试验中一定不发生的事件  </li>
-</ol>
+</ul>
 <p><strong>2. 事件的关系及运算</strong></p>
-<ol>
+<ul>
 <li>包含关系：A $\subset$ B表示A发生，则B必发生</li>
 <li>和事件A+B或A $\bigcup$ B，表示A，B至少有一个发生</li>
 <li>积事件AB或A $\bigcap$ B,表示A，B同时发生</li>
 <li>差事件A-B，表示A发生，且B不发生</li>
-<li>A，B为互斥</li>
+<li>A，B为互斥（互不相容）事件：表示A,B不同时发生，即AB= $\emptyset$</li>
+<li>A的对立事件：表示A不发生，对立实现一定是互斥事件，但互斥事件不一定是对立事件</li>
+</ul>
+<ol>
+<li>摩根律:A $\bigcup$ B 的对立 = A的对立$\bigcap$B的对立,AB的对立 = A的对立$\bigcup$B</li>
 </ol>
+<p>PS:若P(AB) = P(A)P(B),则A,B相互独立</p>
+<ul>
+<li>若A，B相互独立，则B的对立与B，A与B的对立，A的对立和B的对立相互独立</li>
+<li>若P(A)&gt;0,P(B)&gt;0,则A,B相互独立<strong>等价于</strong>A,B相容；A,B不相容<strong>等价</strong>于A,B不相互独立<br><strong>3. 概率的性质</strong></li>
+</ul>
+<ul>
+<li>P(A的对立) = 1-P(A的对立)</li>
+<li>P(A-B) = P(A)-P(AB)</li>
+<li>P(A+B)=P(A)+P(B)-P(AB)</li>
+</ul>
+<p><strong>4. 古典概型</strong><br>古典概率：设随机试验$E$的样本空间$\Omega$=$\lbrace w_1,w_2,w_3,\cdots, w_n \rbrace$</p>
+<ul>
+<li>若n为有限的正整数</li>
+<li>每个基本事件的发生是等可能的，则事件$A$的概率P($A$)=$\frac{A包含的基本事件的个数}{\Omega包含的基本事件的个数} $</li>
+</ul>
+<p><strong>条件概率与全概率公式</strong></p>
+<ul>
+<li>条件概率：设$A,B$是二个事件，P($A$)&gt;0，称$P(B|A)=\frac{P(AB)}{P(A)}$为事件$A$发生的条件下，事件$B$发生的条件概率</li>
+</ul>
 ]]></content>
     </entry>
     
