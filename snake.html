@@ -288,12 +288,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>这仅仅是个贪吃蛇</title>
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><title>这仅仅是个贪吃蛇</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     </head>
     <body onload="main()">
-        <canvas id="myCanvas" onkeydown="canvasKeyDown()" width="300" height="550" style="border:1px solid #d3d3d3;">
+        <!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas id="myCanvas" onkeydown="canvasKeyDown()" width="300" height="550" style="border:1px solid #d3d3d3;">
         </canvas>
         <script language="javascript">
             //屏幕适配
@@ -770,7 +770,7 @@ and open the template in the editor.
                 }, 10);
             window.alert("这是贪吃蛇游戏");
             }
-        </script>
+        </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
     </body>
 </html>
@@ -823,7 +823,7 @@ and open the template in the editor.
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
